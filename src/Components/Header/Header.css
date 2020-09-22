@@ -1,0 +1,29 @@
+.header-style {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: auto;
+	display: flex; 
+	align-items: center;	
+	height: 12vh;
+	z-index: 1;
+	background-color: #F9F6ED; 
+} 
+
+.burger {
+	display: flex;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	flex: .33;
+	color: #E75C44;
+}
+
+.solitude-logo {
+	display: flex;
+	height: 100%;
+	align-items: center;	
+	flex: .66;
+}
+
+
