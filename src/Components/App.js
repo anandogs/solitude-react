@@ -5,6 +5,11 @@ import SwiperCore, {Pagination} from 'swiper';
 import 'swiper/swiper-bundle.css'
 import ourStory from './images/our_story.svg';
 import papaya from './images/papaya.jpg';
+import spinach from './images/spinach.jpg';
+import turkey from './images/turkey.jpg';
+import banana from './images/banana.jpg';
+
+
 
 import './App.css';
 
@@ -64,10 +69,21 @@ ridiculus mus. Nulla facilisis massa ut massa. Sed nisi purus, malesuada eu.
 				<img src={papaya} alt='Papaya' style={{height: '100%'}}/>
 
 			</SwiperSlide>
-			<SwiperSlide> Slide 2 </SwiperSlide>
-			<SwiperSlide> Slide 3 </SwiperSlide>
-			<SwiperSlide> Slide 4 </SwiperSlide>
-			<SwiperSlide> Slide 5 </SwiperSlide>
+			<SwiperSlide> 
+			
+				<img src={spinach} alt='Spinach' style={{height: '100%'}}/>
+
+			</SwiperSlide>
+			<SwiperSlide> 
+			
+				<img src={turkey} alt='Turkey' style={{height: '100%'}}/>
+
+			</SwiperSlide>
+			<SwiperSlide> 
+			
+				<img src={banana} alt='Banana' style={{height: '100%'}}/>
+
+			</SwiperSlide>
 			</Swiper>
 			
 			
