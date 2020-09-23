@@ -7,15 +7,16 @@
 	align-items: center;	
 	height: 12vh;
 	z-index: 1;
-	background-color: #F9F6ED; 
+	background-color: #F9F6ED;
+	justify-content: flex-start; 
 } 
 
 .burger {
 	display: flex;
 	height: 100%;
 	align-items: center;
-	justify-content: center;
-	flex: .33;
+	justify-content: flex-end;
+	flex: .15;
 	color: #E75C44;
 }
 
@@ -23,7 +24,8 @@
 	display: flex;
 	height: 100%;
 	align-items: center;	
-	flex: .66;
+	flex: .75;
+	justify-content: center;
 }
 
 
