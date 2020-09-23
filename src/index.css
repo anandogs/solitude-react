@@ -8,12 +8,11 @@
 
 
 body {
-    	/*background-color: black; */
+    	background-color: #F9F6ED; 
 	font-family: monarcha,serif;
 	font-weight: 700;
 	font-style: normal;
 	color: rgb(68, 86, 65);
-	/*width: 80%;*/
 	margin:auto;
 
 }
