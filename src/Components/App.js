@@ -4,6 +4,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Pagination} from 'swiper';
 import 'swiper/swiper-bundle.css'
 import ourStory from './images/our_story.svg';
+import papaya from './images/papaya.jpg';
 
 import './App.css';
 
@@ -13,17 +14,6 @@ function App() {
   
 const [offsetVerticalScroll, setOffsetVerticalScroll] = useState(0);
 const handleScrolling = () => setOffsetVerticalScroll(window.pageYOffset);
-
-
-const slides=[];
-
-for (let i = 0; i < 5; i+=1) {
-	slides.push(
-		<SwiperSlide key={`slide-${i}`} >
-			<img src={`https://picsum.photos/id/${i+1}/500/300`} />
-		</SwiperSlide>
-		   );
-}
 
 useEffect(() => {
 	window.addEventListener('scroll', handleScrolling); 
@@ -42,20 +32,52 @@ return (
 	<main style={{marginTop: '12vh'}}>
 		<div className='first-page'>
 
-			<h1>
+			<h1 className='center-me'>
 				Mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. 
 			
 			</h1>
 			
 			<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
-				{slides}
+			
+			<SwiperSlide> 
+			Slide 1</SwiperSlide>
+			<SwiperSlide> Slide 2 </SwiperSlide>
+			<SwiperSlide> Slide 3 </SwiperSlide>
+			<SwiperSlide> Slide 4 </SwiperSlide>
+			<SwiperSlide> Slide 5 </SwiperSlide>
+
 			</Swiper>
 		</div>
 
 		<div className='second-page'>
+			<div className='center-me'>	
+				<img src={ourStory} alt ='Our Story' style={{width: '50%'}} />
+			</div>	
+
+			<span className='center-me'> In, urna. Nam eget eros a enim pulvinar rhoncus.
+Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+ridiculus mus. Nulla facilisis massa ut massa. Sed nisi purus, malesuada eu.
+			</span>
+			<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
+			<SwiperSlide> 
 			
-			<img src={ourStory} alt ='Our Story' style={{width: '50%'}} />
-			<div/> 
+				<img src={papaya} alt='Papaya' style={{height: '100%'}}/>
+
+			</SwiperSlide>
+			<SwiperSlide> Slide 2 </SwiperSlide>
+			<SwiperSlide> Slide 3 </SwiperSlide>
+			<SwiperSlide> Slide 4 </SwiperSlide>
+			<SwiperSlide> Slide 5 </SwiperSlide>
+			</Swiper>
+			
+			
+			<div className='caption-box center-me'>
+			<h4>Photo heading</h4>	
+
+			<span className='caption-text'> Iaculis sollicitudin, leo ligula cursus
+				sem, eu congue metus ligula sed justo. Suspendisse.
+			</span>
+			</div>
 		</div>
 			
 	</main>
