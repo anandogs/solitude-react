@@ -1,3 +1,6 @@
+.app-overall {
+	background-color: #F9F6ED;
+}
 .flex-page{
 	display: flex;
 	flex-direction: column;
@@ -12,22 +15,6 @@
 
 }
 
-.parallax-bg {
-	width: 100%;
-	height: 400vh; 
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: absolute;
-	background-image: url('images/background.jpg');
-	z-index: -1;
-}
-
-h1 {
-	background-color: #F9F6ED;
-
-}
-
-
 h4 {
 
 	font-size: .9rem;
@@ -39,6 +26,7 @@ h4 {
 
 	font-size: .75rem;
 	line-height: .75rem; }
+
 .swiper-pagination-bullet {
 	width: 20%;
 	height: 3px;
@@ -59,8 +47,6 @@ h4 {
 	width: 100%;
 	height: 40vh;
 	display: flex;
-	align-items: center;
-	justify-items: center;
 
 
 }

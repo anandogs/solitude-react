@@ -9,13 +9,11 @@ SwiperCore.use([Pagination]);
 function Intro() {
   return (
 	<div className='flex-page'>
-		<div style={{width: '100%', backgroundColor: '#F9F6ED'}}>
 			<h1 className='center-div'>
 
 					Mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. 
 			
 			</h1>
-		</div>	
 		<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
 		
 			<SwiperSlide> Slide 1 </SwiperSlide>

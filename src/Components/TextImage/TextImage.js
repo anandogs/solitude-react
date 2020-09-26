@@ -7,6 +7,7 @@ import papaya from './images/papaya.jpg';
 import spinach from './images/spinach.jpg';
 import turkey from './images/turkey.jpg';
 import banana from './images/banana.jpg';
+import tapioca from './images/tapioca.jpg';
 import '../App.css';
 
 SwiperCore.use([Pagination]);
@@ -49,6 +50,12 @@ function TextImage() {
 				<SwiperSlide> 
 				
 					<img src={banana} alt='Banana' style={{height: '100%'}}/>
+
+				</SwiperSlide>
+		
+				<SwiperSlide> 
+				
+					<img src={tapioca} alt='Tapioca' style={{height: '100%'}}/>
 
 				</SwiperSlide>
 
