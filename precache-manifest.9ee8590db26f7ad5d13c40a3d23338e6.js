@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "33781bc73515977e88a3e113ed750c75",
+    "revision": "fabd3dad004fdf74621a7a92dd9aaaab",
     "url": "/solitude-react/index.html"
   },
   {
-    "revision": "a187144350600ede019f",
+    "revision": "3b77cdc3217105431c38",
     "url": "/solitude-react/static/css/2.f278118f.chunk.css"
   },
   {
-    "revision": "4854878f0126fd0c6c25",
-    "url": "/solitude-react/static/css/main.35cc7a3d.chunk.css"
+    "revision": "0747fb9359c02404371b",
+    "url": "/solitude-react/static/css/main.33b62e90.chunk.css"
   },
   {
-    "revision": "a187144350600ede019f",
-    "url": "/solitude-react/static/js/2.21032235.chunk.js"
+    "revision": "3b77cdc3217105431c38",
+    "url": "/solitude-react/static/js/2.0d71d538.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/solitude-react/static/js/2.21032235.chunk.js.LICENSE.txt"
+    "url": "/solitude-react/static/js/2.0d71d538.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4854878f0126fd0c6c25",
-    "url": "/solitude-react/static/js/main.f872746d.chunk.js"
+    "revision": "0747fb9359c02404371b",
+    "url": "/solitude-react/static/js/main.a40386f9.chunk.js"
   },
   {
     "revision": "41b30ba9af5780cc103e",
     "url": "/solitude-react/static/js/runtime-main.66163a2b.js"
+  },
+  {
+    "revision": "7c25c2ac7c991e60a96587126ea858c8",
+    "url": "/solitude-react/static/media/background.7c25c2ac.jpg"
   },
   {
     "revision": "838f54ad703c0c1edcccf093e1eaf451",
