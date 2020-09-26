@@ -1,18 +1,27 @@
-.parallax-bg {
-
-	/*background-image: url('images/background.png');*/
-	background-repeat: no-repeat;
-	background-size: contain;
-	position: absolute;
-	z-index: -1;
-
+.flex-page{
+	display: flex;
+	flex-direction: column;
+	height: 88vh;
+	padding-bottom: 5vh;
+	justify-content: space-evenly;
 }
-.center-me {
+.center-div{
 
 	width: 80%;
 	margin: auto;
 
 }
+
+.parallax-bg {
+	width: 100%;
+	height: 400vh; 
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: absolute;
+	background-image: url('images/background.jpg');
+	z-index: -1;
+}
+
 h1 {
 	background-color: #F9F6ED;
 
@@ -30,13 +39,6 @@ h4 {
 
 	font-size: .75rem;
 	line-height: .75rem; }
-.first-page, .second-page {
-	display: flex;
-	flex-direction: column;
-	height: 88vh;
-	padding-bottom: 5vh;
-	justify-content: space-evenly;
-}
 .swiper-pagination-bullet {
 	width: 20%;
 	height: 3px;

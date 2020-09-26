@@ -1,8 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import './Header.css';
 
 function BurgerMenu({open}) {
-	console.log({open})
 
 const SolitudeMenu = () => {
 	return {
@@ -21,6 +20,15 @@ const SolitudeMenu = () => {
 
 }};
 
+
+const [offsetVerticalScroll, setOffsetVerticalScroll] = useState(0);
+const handleScroll= () => setOffsetVerticalScroll(window.pageYOffset);
+
+useEffect(() => {
+	window.addEventListener('scroll', handleScroll); 
+	return () => window.removeEventListener("scroll", handleScroll);
+
+		}, []); 
 
   return (
 	<div style={SolitudeMenu()}>
