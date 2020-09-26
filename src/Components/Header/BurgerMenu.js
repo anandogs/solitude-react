@@ -17,18 +17,9 @@ const SolitudeMenu = () => {
 	textTransform: 'uppercase',
 	transform: open ? 'translateX(0)' : 'translateX(-100%)',
 	transition: 'transform 0.3s ease-in-out',
-
 }};
 
 
-const [offsetVerticalScroll, setOffsetVerticalScroll] = useState(0);
-const handleScroll= () => setOffsetVerticalScroll(window.pageYOffset);
-
-useEffect(() => {
-	window.addEventListener('scroll', handleScroll); 
-	return () => window.removeEventListener("scroll", handleScroll);
-
-		}, []); 
 
   return (
 	<div style={SolitudeMenu()}>
