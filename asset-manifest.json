@@ -1,32 +1,34 @@
 {
   "files": {
-    "main.css": "/solitude-react/static/css/main.33b62e90.chunk.css",
-    "main.js": "/solitude-react/static/js/main.a40386f9.chunk.js",
-    "main.js.map": "/solitude-react/static/js/main.a40386f9.chunk.js.map",
+    "main.css": "/solitude-react/static/css/main.f67c1d91.chunk.css",
+    "main.js": "/solitude-react/static/js/main.f726f90c.chunk.js",
+    "main.js.map": "/solitude-react/static/js/main.f726f90c.chunk.js.map",
     "runtime-main.js": "/solitude-react/static/js/runtime-main.66163a2b.js",
     "runtime-main.js.map": "/solitude-react/static/js/runtime-main.66163a2b.js.map",
     "static/css/2.f278118f.chunk.css": "/solitude-react/static/css/2.f278118f.chunk.css",
-    "static/js/2.0d71d538.chunk.js": "/solitude-react/static/js/2.0d71d538.chunk.js",
-    "static/js/2.0d71d538.chunk.js.map": "/solitude-react/static/js/2.0d71d538.chunk.js.map",
+    "static/js/2.4891ac45.chunk.js": "/solitude-react/static/js/2.4891ac45.chunk.js",
+    "static/js/2.4891ac45.chunk.js.map": "/solitude-react/static/js/2.4891ac45.chunk.js.map",
     "index.html": "/solitude-react/index.html",
-    "precache-manifest.9ee8590db26f7ad5d13c40a3d23338e6.js": "/solitude-react/precache-manifest.9ee8590db26f7ad5d13c40a3d23338e6.js",
+    "precache-manifest.264b7919f8464ba8511e6b2d98d1fb71.js": "/solitude-react/precache-manifest.264b7919f8464ba8511e6b2d98d1fb71.js",
     "service-worker.js": "/solitude-react/service-worker.js",
     "static/css/2.f278118f.chunk.css.map": "/solitude-react/static/css/2.f278118f.chunk.css.map",
-    "static/css/main.33b62e90.chunk.css.map": "/solitude-react/static/css/main.33b62e90.chunk.css.map",
-    "static/js/2.0d71d538.chunk.js.LICENSE.txt": "/solitude-react/static/js/2.0d71d538.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/solitude-react/static/media/background.7c25c2ac.jpg",
+    "static/css/main.f67c1d91.chunk.css.map": "/solitude-react/static/css/main.f67c1d91.chunk.css.map",
+    "static/js/2.4891ac45.chunk.js.LICENSE.txt": "/solitude-react/static/js/2.4891ac45.chunk.js.LICENSE.txt",
+    "static/media/BurgerMenu.css": "/solitude-react/static/media/background.7c25c2ac.jpg",
     "static/media/banana.jpg": "/solitude-react/static/media/banana.838f54ad.jpg",
+    "static/media/fullpage.jpg": "/solitude-react/static/media/fullpage.f865a76b.jpg",
     "static/media/logo.svg": "/solitude-react/static/media/logo.e59a7b24.svg",
     "static/media/our_story.svg": "/solitude-react/static/media/our_story.c1f2a59a.svg",
     "static/media/papaya.jpg": "/solitude-react/static/media/papaya.39bef645.jpg",
     "static/media/spinach.jpg": "/solitude-react/static/media/spinach.0e2bb942.jpg",
+    "static/media/tapioca.jpg": "/solitude-react/static/media/tapioca.a4d57f42.jpg",
     "static/media/turkey.jpg": "/solitude-react/static/media/turkey.418e5837.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.66163a2b.js",
     "static/css/2.f278118f.chunk.css",
-    "static/js/2.0d71d538.chunk.js",
-    "static/css/main.33b62e90.chunk.css",
-    "static/js/main.a40386f9.chunk.js"
+    "static/js/2.4891ac45.chunk.js",
+    "static/css/main.f67c1d91.chunk.css",
+    "static/js/main.f726f90c.chunk.js"
   ]
 }

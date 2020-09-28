@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fabd3dad004fdf74621a7a92dd9aaaab",
+    "revision": "fcfee0832d1b1c1fc7b3a91938214000",
     "url": "/solitude-react/index.html"
   },
   {
-    "revision": "3b77cdc3217105431c38",
+    "revision": "65e2c35ca8b2aeddc0ce",
     "url": "/solitude-react/static/css/2.f278118f.chunk.css"
   },
   {
-    "revision": "0747fb9359c02404371b",
-    "url": "/solitude-react/static/css/main.33b62e90.chunk.css"
+    "revision": "0c30c451393d34ae7f54",
+    "url": "/solitude-react/static/css/main.f67c1d91.chunk.css"
   },
   {
-    "revision": "3b77cdc3217105431c38",
-    "url": "/solitude-react/static/js/2.0d71d538.chunk.js"
+    "revision": "65e2c35ca8b2aeddc0ce",
+    "url": "/solitude-react/static/js/2.4891ac45.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/solitude-react/static/js/2.0d71d538.chunk.js.LICENSE.txt"
+    "url": "/solitude-react/static/js/2.4891ac45.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0747fb9359c02404371b",
-    "url": "/solitude-react/static/js/main.a40386f9.chunk.js"
+    "revision": "0c30c451393d34ae7f54",
+    "url": "/solitude-react/static/js/main.f726f90c.chunk.js"
   },
   {
     "revision": "41b30ba9af5780cc103e",
@@ -34,6 +34,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "838f54ad703c0c1edcccf093e1eaf451",
     "url": "/solitude-react/static/media/banana.838f54ad.jpg"
+  },
+  {
+    "revision": "f865a76bf22fbbfcc17a03e77676eef4",
+    "url": "/solitude-react/static/media/fullpage.f865a76b.jpg"
   },
   {
     "revision": "e59a7b241cc7a49d463b7e5b95c60082",
@@ -50,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0e2bb942433ff078b544bb970417b4b3",
     "url": "/solitude-react/static/media/spinach.0e2bb942.jpg"
+  },
+  {
+    "revision": "a4d57f429a30c1a0e9f46a9eb331839a",
+    "url": "/solitude-react/static/media/tapioca.a4d57f42.jpg"
   },
   {
     "revision": "418e5837f9df7d7943b97413d8325e24",
