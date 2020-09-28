@@ -4,6 +4,7 @@ import SwiperCore, {Pagination} from 'swiper';
 import 'swiper/swiper-bundle.css'
 import '../App.css';
 import csa from './images/csa.png'
+import fullPage from './images/fullpage.jpg'
 
 SwiperCore.use([Pagination]);
 
@@ -11,9 +12,9 @@ function Text() {
 
 	return (
 
-		<div className='flex-page center-div'>
+		<div className='flex-page'>
 
-				<div> 
+				<div className='center-div'> 
 				<img src={csa} alt='CSA' />
 				</div>	
 
@@ -21,7 +22,7 @@ function Text() {
 
 					<SwiperSlide> 
 					
-						<span style={{overflow: 'auto'}}> 
+						<p style={{overflow: 'auto', width: '80%'}}> 
 
 							
 							Dui velit, ultrices vel, ullamcorper mattis, hendrerit in, erat. Aenean vel
@@ -40,26 +41,12 @@ function Text() {
 							Curabitur cursus volutpat neque. Proin posuere mauris ut.
 
 
-						</span>
+						</p>
 
 					</SwiperSlide>
-			  
 					<SwiperSlide> 
 					
-					</SwiperSlide>
-
-					<SwiperSlide> 
-					
-
-					</SwiperSlide>
-			  
-					<SwiperSlide> 
-					
-					</SwiperSlide>
-			
-					<SwiperSlide> 
-					
-
+			 			<img style={{width: '100%'}}src={fullPage} alt='full page'/> 
 					</SwiperSlide>
 
 				</Swiper>

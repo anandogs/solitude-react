@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import TextImage from './TextImage/TextImage';
 import Text from './Text/Text';
+import TextExpand from './TextExpand/TextExpand';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ return (
 		<Intro />
 		<TextImage />	
 		<Text />
+		<TextExpand />
 	</main>
     </div>
   );
