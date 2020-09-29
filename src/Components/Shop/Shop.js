@@ -12,7 +12,7 @@ function Shop() {
 
 	return (
 
-		<div className='flex-page' id='our-story'>
+		<div className='flex-page' id='shop'>
 
 			<div className='center-div'>
 				<img src={products} alt ='Products'/>

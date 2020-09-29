@@ -20,7 +20,7 @@ function BurgerMenu({open, toggleMenu}) {
 	  return (
 		<div className = 'solitude-menu' style={SolitudeMenu()}>
 			<ul>
-				<Link onClick={toggleMenu} 
+				<li><Link onClick={toggleMenu} 
 				    to="our-story"
 				    spy={true}
 				    smooth={true}
@@ -28,15 +28,43 @@ function BurgerMenu({open, toggleMenu}) {
 				    duration={500}
 				>
 				our story
-				</Link>
-				<li>csa</li>
-				<li>projects</li>
-				<li>resources</li>
-				<li>music</li>
-				<li>workshops</li>
-				<li>organic cafe</li>
-				<li>products</li>
-				<li>get in touch</li>
+				</Link></li>
+				<li><Link onClick={toggleMenu} 
+				    to="csa"
+				    spy={true}
+				    smooth={true}
+				    offset={-70}
+				    duration={500}
+				>
+				csa
+				</Link></li>
+				<li><Link onClick={toggleMenu} 
+				    to="projects"
+				    spy={true}
+				    smooth={true}
+				    offset={-70}
+				    duration={500}
+				>
+				projects
+				</Link></li>
+				<li><Link onClick={toggleMenu} 
+				    to="shop"
+				    spy={true}
+				    smooth={true}
+				    offset={-70}
+				    duration={500}
+				>
+				products
+				</Link></li>
+				<li><Link onClick={toggleMenu} 
+				    to="contact"
+				    spy={true}
+				    smooth={true}
+				    offset={-70}
+				    duration={500}
+				>
+				get in touch	
+				</Link></li>
 			</ul>
 				<div className = 'social-box'>
 					<img src={fb} alt='FB'/> 

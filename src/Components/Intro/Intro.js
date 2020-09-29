@@ -17,7 +17,7 @@ function Intro() {
 	      },
 	    };
   return (
-	<div className='flex-page'>
+	<div className='flex-page' id='intro'>
 			<h1 className='center-div'>
 
 					Mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. 

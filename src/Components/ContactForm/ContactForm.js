@@ -7,7 +7,7 @@ function ContactForm() {
 
 	return (
 
-		<div className='flex-page center-div'>
+		<div className='flex-page center-div' id='contact'>
 
 				<div> 
 				<img src={contact} alt='Contact Us' />

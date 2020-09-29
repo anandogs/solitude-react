@@ -22,7 +22,7 @@ function TextExpand() {
 	};
 
 	return (
-		<div className='flex-page center-div'>
+		<div className='flex-page center-div' id='projects'>
 
 				<div> 
 				<img src={projects} alt='Projects' />

@@ -12,7 +12,7 @@ function Text() {
 
 	return (
 
-		<div className='flex-page'>
+		<div className='flex-page' id='csa'>
 
 				<div className='center-div'> 
 				<img src={csa} alt='CSA' />
