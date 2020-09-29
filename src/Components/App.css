@@ -5,7 +5,7 @@
 	display: flex;
 	flex-direction: column;
 	height: 88vh;
-	padding-bottom: 5vh;
+	padding-bottom: 10vh;
 	justify-content: space-evenly;
 }
 .center-div{
@@ -15,9 +15,9 @@
 
 }
 
-h4 {
+.mono, h4 {
 
-	font-size: .9rem;
+	font-size: .7em;
 	font-family: monotype-grotesque,sans-serif;
 	text-transform: uppercase;
 }

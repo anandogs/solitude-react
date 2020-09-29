@@ -2,53 +2,47 @@ import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Pagination} from 'swiper';
 import 'swiper/swiper-bundle.css'
-import ourStory from './images/our_story.svg';
-import imageBlank from './images/image-blank.png';
 import '../App.css';
+import products from './images/products.png'
+import imageBlank from './images/image-blank.png'
 
 SwiperCore.use([Pagination]);
 
-function TextImage() {
+function Shop() {
 
 	return (
 
 		<div className='flex-page' id='our-story'>
 
 			<div className='center-div'>
-				<img src={ourStory} alt ='Our Story' style={{width: '50%'}} />
+				<img src={products} alt ='Products'/>
 			</div>	
-
-			<span className='center-div' style={{paddingBottom: '1em'}}> In, urna. Nam eget eros a enim pulvinar rhoncus.
-				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-				ridiculus mus. Nulla facilisis massa ut massa. Sed nisi purus, malesuada eu.
-			</span>
 
 			<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
 
 				<SwiperSlide> 
 				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
+					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
 
 				</SwiperSlide>
 		  
 				<SwiperSlide> 
 				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
+					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
 
 				</SwiperSlide>
 
 				<SwiperSlide> 
 				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
+					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
 
 				</SwiperSlide>
 		  
 				<SwiperSlide> 
 				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
+					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
 
 				</SwiperSlide>
-		
 
 			</Swiper>
 			
@@ -62,8 +56,11 @@ function TextImage() {
 
 			</div>
 
+			<div className='center-div'>		
+				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED'}}>Shop</button>
+			</div>
 		</div>
 	);
 }
 
-export default TextImage;
+export default Shop;

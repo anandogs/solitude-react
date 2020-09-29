@@ -2,11 +2,20 @@ import React from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import SwiperCore, {Pagination} from 'swiper';
 import 'swiper/swiper-bundle.css'
+import YouTube from 'react-youtube'
 import '../App.css';
 
 SwiperCore.use([Pagination]);
 
 function Intro() {
+	    const opts = {
+	      width: '100%',
+		height: '90%', 
+	      playerVars: {
+		autoplay: 1,
+		      captions: 1,
+	      },
+	    };
   return (
 	<div className='flex-page'>
 			<h1 className='center-div'>
@@ -16,11 +25,10 @@ function Intro() {
 			</h1>
 		<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
 		
-			<SwiperSlide> Slide 1 </SwiperSlide>
-			<SwiperSlide> Slide 2 </SwiperSlide>
-			<SwiperSlide> Slide 3 </SwiperSlide>
-			<SwiperSlide> Slide 4 </SwiperSlide>
-			<SwiperSlide> Slide 5 </SwiperSlide>
+			<SwiperSlide> <YouTube videoId='vuIyuCWx3bc' opts ={opts}/> </SwiperSlide>
+			<SwiperSlide> <YouTube videoId='0U-tU08Zpi8' opts ={opts}/> </SwiperSlide>
+			<SwiperSlide> <YouTube videoId='7jUn_PDxCrA' opts ={opts}/> </SwiperSlide>
+			<SwiperSlide> <YouTube videoId='atJqPo6njzE' opts ={opts}/> </SwiperSlide>
 
 		</Swiper>
 

@@ -4,6 +4,8 @@ import Intro from './Intro/Intro';
 import TextImage from './TextImage/TextImage';
 import Text from './Text/Text';
 import TextExpand from './TextExpand/TextExpand';
+import ContactForm from './ContactForm/ContactForm';
+import Shop from './Shop/Shop';
 import './App.css';
 
 function App() {
@@ -16,6 +18,8 @@ return (
 		<TextImage />	
 		<Text />
 		<TextExpand />
+		<Shop />
+		<ContactForm />
 	</main>
     </div>
   );
