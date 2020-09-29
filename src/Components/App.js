@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import TextImage from './TextImage/TextImage';

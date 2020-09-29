@@ -16,7 +16,7 @@ function TextImage() {
 
 	return (
 
-		<div className='flex-page'>
+		<div className='flex-page' id='our-story'>
 
 			<div className='center-div'>
 				<img src={ourStory} alt ='Our Story' style={{width: '50%'}} />

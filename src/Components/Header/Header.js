@@ -10,13 +10,16 @@ function Header() {
 
 	const [open, setOpen] = useState(false)
 
+	const toggleMenu = () => {
+		setOpen(!open)
+	};
   return (
     <div className='header-style'>
-	<div className='burger' onClick={() => setOpen(!open)}>	
+	<div className='burger' onClick={toggleMenu}>	
 		<FontAwesomeIcon icon={faGripLines} />
 	</div>	
 	
-	<BurgerMenu open={open}/>
+	<BurgerMenu open={open} toggleMenu={toggleMenu}/>
 
 	<div className='solitude-logo'>
 		<img style={{height:'100%',}} src={logo} alt="Logo" />
