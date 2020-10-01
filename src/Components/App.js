@@ -13,7 +13,7 @@ function App() {
 return (
     <div className='app-overall'>
 	<Header />
-	<main style={{marginTop: '12vh'}}>
+	<main>
 		<Intro />
 		<TextImage />	
 		<Text />

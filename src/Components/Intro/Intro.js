@@ -9,21 +9,21 @@ SwiperCore.use([Pagination]);
 
 function Intro() {
 	    const opts = {
-	      width: '100%',
-		height: '90%', 
-	      playerVars: {
-		autoplay: 1,
-		      captions: 1,
-	      },
-	    };
+            width: '100%',
+            height: '90%', 
+            playerVars: {
+                autoplay: 1,
+                },
+            };
   return (
 	<div className='flex-page' id='intro'>
-			<h1 className='center-div'>
 
-					Mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. 
-			
-			</h1>
-		<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
+        <h1 className='center-div'>
+
+                Mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. 
+        
+        </h1>
+		<Swiper style={{backgroundColor: 'black'}}pagination={{clickable:'true'}}>
 		
 			<SwiperSlide> <YouTube videoId='vuIyuCWx3bc' opts ={opts}/> </SwiperSlide>
 			<SwiperSlide> <YouTube videoId='0U-tU08Zpi8' opts ={opts}/> </SwiperSlide>
@@ -31,7 +31,6 @@ function Intro() {
 			<SwiperSlide> <YouTube videoId='atJqPo6njzE' opts ={opts}/> </SwiperSlide>
 
 		</Swiper>
-
 	</div>
 
   );
