@@ -14,38 +14,41 @@
 }
 
 .menu-list-web {
-    background-color: lightblue;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .menu-list-web > .logo-placeholder {
-    background-color: black;
+    cursor: pointer;
+    height: 10vh;
 }
 
 .menu-list-web > .menu-items{
-    background-color: blue;
+    flex: 1;
 	font-family: monotype-grotesque,sans-serif;
 	font-size: .75rem;
 	line-height: 2rem;
 	text-transform: uppercase;
-}
-.menu-list-web > .social-buttons{
-    background-color: black;
-}
-ul {
-    background-color: green;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-items: flex-start;
+    cursor: pointer;
+    width: 100%;
 }
-
-li {
-    background-color: black;
+.menu-list-web > .social-buttons{
+    display: flex; 
+    width: 100%;
+    justify-content: space-evenly;
+    padding-bottom: 2vh;
 }
+.menu-links {
+    padding-left: 2em;
 
+}
+Link {
+    width: 100%;
+}
 /* mobile site */
 @media (max-width:400px){
 

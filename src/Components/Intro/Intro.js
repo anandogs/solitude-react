@@ -23,13 +23,12 @@ function Intro() {
                 Mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. 
         
         </h1>
-		<Swiper style={{backgroundColor: 'black'}}pagination={{clickable:'true'}}>
+		<Swiper pagination={{clickable:'true'}}>
 		
-			<SwiperSlide> <YouTube videoId='vuIyuCWx3bc' opts ={opts}/> </SwiperSlide>
-			<SwiperSlide> <YouTube videoId='0U-tU08Zpi8' opts ={opts}/> </SwiperSlide>
-			<SwiperSlide> <YouTube videoId='7jUn_PDxCrA' opts ={opts}/> </SwiperSlide>
-			<SwiperSlide> <YouTube videoId='atJqPo6njzE' opts ={opts}/> </SwiperSlide>
-
+			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
+			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
+			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
+			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
 		</Swiper>
 	</div>
 
