@@ -1,36 +1,46 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import './Header.css';
 import logo from './images/logo.svg'
-import yt from './images/yt.png'
-import fb from './images/fb.png'
-import insta from './images/insta.png'
-import mail from './images/mail.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGripLines} from '@fortawesome/free-solid-svg-icons'
-import BurgerMenu from './BurgerMenu';
-import Menu from './Menu';
+import WebMenu from './WebMenu';
 
 function Header() {
 
-	const [open, setOpen] = useState(false)
+    const curState = () => {
+        if (window.innerWidth <= 400){
+            return false
+        }
+        else {
+            return true
+        }
+    }
+
+	const [open, setOpen] = useState(curState())
 
 	const toggleMenu = () => {
-		setOpen(!open)
+        if (window.innerWidth <= 400){
+            setOpen(!open)
+        }
 	};
     return (
     <div>
-        <webMenu />
-
         <div className='menu-mob'> 
             <div className='burger' onClick={toggleMenu}>	
                 <FontAwesomeIcon icon={faGripLines} />
             </div>	
-            <BurgerMenu open={open} toggleMenu={toggleMenu}/>
-            <Link className='solitude-logo' to='intro' spy={true} smooth={true} offset={-70} duration={500}>
-                <img style={{width:'100%',}} src={logo} alt="Logo" />
-            </Link>
+            <div className='solitude-logo'>
+                <Link to='intro' spy={true} smooth={true} offset={-70} duration={500}>
+                    <img style={{height:'100%',}} src={logo} alt="Logo" />
+                </Link>
+            </div>
         </div>
+
+        <div className='web-menu'>
+            <WebMenu className='web-menu' open={open} toggleMenu={toggleMenu}/>
+        </div>
+
     </div>
     );
 };

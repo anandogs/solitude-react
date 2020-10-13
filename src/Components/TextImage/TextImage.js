@@ -1,12 +1,10 @@
 import React from 'react';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore, {Pagination} from 'swiper';
-import 'swiper/swiper-bundle.css'
-import ourStory from './images/our_story.svg';
-import imageBlank from './images/image-blank.png';
+import ourStory from './images/our-story.png';
+import imageBlank from './images/img-blank.png';
+import Slide from '../Slide/Slide';
+import './TextImage.css';
 import '../App.css';
 
-SwiperCore.use([Pagination]);
 
 function TextImage() {
 
@@ -14,45 +12,26 @@ function TextImage() {
 
 		<div className='flex-page' id='our-story'>
 
-			<div className='center-div'>
-				<img src={ourStory} alt ='Our Story' style={{width: '50%'}} />
+            <div className='img-container' id='image-container'>
+                <Slide imgSrc={['Hello', 'Goodbye']}/>
+            </div>
+            <div className='heading-text-caption'>
+
+			<div className='center-div' id='heading-container'>
+				<img src={ourStory} alt ='Our Story'/>
 			</div>	
-
-			<span className='center-div' style={{paddingBottom: '1em'}}> In, urna. Nam eget eros a enim pulvinar rhoncus.
+			<div className='center-div' id='text-container' style={{paddingBottom: '1em'}}> In, urna. Nam eget eros a enim pulvinar rhoncus.
 				Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-				ridiculus mus. Nulla facilisis massa ut massa. Sed nisi purus, malesuada eu.
-			</span>
+                ridiculus mus. Nulla facilisis massa ut massa. Sed nisi purus,
+                malesuada eu.  Amet, elit.
 
-			<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
-
-				<SwiperSlide> 
-				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-		  
-				<SwiperSlide> 
-				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-
-				<SwiperSlide> 
-				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-		  
-				<SwiperSlide> 
-				
-					<img src={imageBlank} alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-		
-
-			</Swiper>
+                Curabitur urna tellus, aliquam vitae, ultrices eget, vehicula nec, diam.
+                Integer elementum, felis non faucibus euismod, erat massa dictum eros,
+                eu ornare ligula tortor et mauris. Cras molestie magna in nibh. Aenean
+                et tellus. Fusce adipiscing commodo erat. In eu.
+			</div>
 			
-			<div className='caption-box center-div'>
+			<div className='caption-box center-div' id='caption-container'>
 
 				<h4>Photo heading</h4>	
 
@@ -61,7 +40,7 @@ function TextImage() {
 				</span>
 
 			</div>
-
+        </div>
 		</div>
 	);
 }

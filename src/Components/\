@@ -1,0 +1,20 @@
+.container-slide{
+    display: flex;
+    flex-shrink:0; 
+    width: 100%;
+    align-items: flex-start;
+}
+img {
+    flex-shrink: 0;
+}
+
+
+.container {
+    width: 564px;
+    margin: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+    overflow: hidden;
+}
+

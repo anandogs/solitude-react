@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, {  useEffect } from 'react';
 import { Link } from 'react-scroll';
 import './Header.css';
 import logo from './images/logo.svg'
@@ -8,8 +8,15 @@ import insta from './images/insta.png'
 import mail from './images/mail.png'
 
 
-function webMenu() {
+function WebMenu({open, toggleMenu}){
     
+    
+	const SolitudeMenu = () => {
+		return {
+		transform: open ? 'translateX(0)' : 'translateX(-100%)',
+		transition: 'transform 0.3s ease-in-out',
+	}};
+
     useEffect(() => {
 
         const ourStoryLoc = {
@@ -36,6 +43,7 @@ function webMenu() {
         const pageArray = [ourStoryLoc, csaLoc, projectsLoc, shopLoc, contactLoc]
         
         const closestPage = (pgArr) => {
+            console.log(window.innerWidth)
             let minVal = window.scrollY
             let chosenPage = '#intro'
             for (let i = 0; i < pgArr.length; i++) {
@@ -61,7 +69,7 @@ function webMenu() {
 
     return (
         <div>
-            <div className='menu-web'> 
+            <div className='menu-web' style={SolitudeMenu()} > 
                 <div className='header-img-web'>
                 
                 </div>
@@ -73,55 +81,50 @@ function webMenu() {
                         </div>
                         <div className='menu-items'>
                             <div className='menu-links' id='our-story-link'>
-                                <Link style={{alignItems: 'center'}} 
+                                <Link onClick={toggleMenu} 
                                     to="our-story"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
                                     duration={500}
                                 >
                                 our story
                                 </Link>
                             </div>
                             <div className='menu-links' id='csa-link'>
-                                <Link 
+                                <Link onClick={toggleMenu} 
                                     to="csa"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
                                     duration={500}
                                 >
                                 csa
                                 </Link>
                             </div>
                             <div className='menu-links' id='projects-link'>
-                                <Link 
+                                <Link onClick={toggleMenu}
                                     to="projects"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
                                     duration={500}
                                 >
                                 projects
                                 </Link>
                             </div>
                             <div className='menu-links' id='shop-link'>
-                                <Link 
+                                <Link onClick={toggleMenu}
                                     to="shop"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
                                     duration={500}
                                 >
                                 products
                                 </Link>
                             </div>
                             <div className='menu-links' id='contact-link'>
-                                <Link 
+                                <Link onClick={toggleMenu}
                                     to="contact"
                                     spy={true}
                                     smooth={true}
-                                    offset={-70}
                                     duration={500}
                                 >
                                 get in touch	
@@ -140,4 +143,4 @@ function webMenu() {
     );
 };
 
-export default Menu
+export default WebMenu

@@ -1,0 +1,43 @@
+.container-slide{
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+img {
+    flex-shrink: 0;
+}
+
+
+.container {
+    width: 564px;
+    overflow: hidden;
+}
+
+#tracker {
+    position: absolute;
+    bottom: 5%;
+    height: 5px;
+    background-color: #F9F5EB;
+    width: 564px;
+    margin: auto;
+}
+
+#scroller {
+    
+    transition: transform 0.4s ease-in-out;
+    background-color: #E75C44;
+    height: 5px;
+}
+
+
+#nextBtn{
+    position: absolute;
+    right: 0%;
+    color: #E75C44;
+    top: 50%;
+}
+#prevBtn{
+    position: absolute;
+    left: 0%;
+    color: #E75C44;
+    top: 50%;
+}
