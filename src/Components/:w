@@ -9,6 +9,11 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import './Slide.css';
 
 function Slide(props) {
+    if (props.image) {
+        for (let i=0; i<props.image.length; i++) {
+            console.log(props.image[i])        
+        }
+    }
     useEffect(() => {
         const images = document.querySelectorAll('.container-slide img');
         const tracker= document.querySelector('#tracker');

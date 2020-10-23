@@ -7,13 +7,14 @@ import '../App.css';
 
 
 function TextImage() {
+    const arr = ['text', 'next']
+    const img1 = [require('../TextImage/images/img-blank.png'), require('../TextImage/images/img-blank1.png'), require('../TextImage/images/img-blank2.png')]
 
 	return (
-
 		<div className='flex-page' id='our-story'>
 
             <div className='img-container' id='image-container'>
-                <Slide imgSrc={['Hello', 'Goodbye']}/>
+                <Slide image={img1} />
             </div>
             <div className='heading-text-caption'>
 

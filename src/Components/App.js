@@ -21,7 +21,6 @@ return (
             <TextExpand />
             <Shop />
             <ContactForm />
-            <Slide />
         </main>
     </div>
   );
