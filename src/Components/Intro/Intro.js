@@ -1,27 +1,20 @@
 import React from 'react';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore, {Pagination} from 'swiper';
-import 'swiper/swiper-bundle.css'
 import '../App.css';
+import './Intro.css';
 
-SwiperCore.use([Pagination]);
 
 function Intro() {
+
   return (
 	<div className='flex-page' id='intro'>
 
-        <h1 className='center-div'>
+      <div className='intro-heading'>
+        <h1>
 
-                Mus. Aliquam quam. Nam felis velit, semper nec, aliquam nec, iaculis vel, mi. 
+                Solitude Farm is a nook with two windmills and hundreds of papaya trees in <span className='red'>Auroville</span>, South India. Come in. 
         
         </h1>
-		<Swiper pagination={{clickable:'true'}}>
-		
-			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
-			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
-			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
-			<SwiperSlide style={{backgroundColor: '#B7B1A5'}}> </SwiperSlide>
-		</Swiper>
+      </div>
 	</div>
 
   );
