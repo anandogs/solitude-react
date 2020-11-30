@@ -25,7 +25,8 @@ return (
             <TextImage titleImg={require('./TextImage/images/our-story.png')} pgId = 'our-story' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
             <TextImage titleImg={require('./TextImage/images/csa.png')} pgId = 'csa' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
             <TextExpand titleImg={require('./TextImage/images/projects.png')} pgId = 'projects' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
-            <Shop />
+            <Shop titleImg={require('./Shop/images/products.png')} pgId = 'shop' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
+            <ContactForm titleImg={require('./ContactForm/images/contact.png')} pgId = 'contact' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
             <ContactForm />
         </main>
     </div>

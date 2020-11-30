@@ -1,0 +1,16 @@
+.mob-contact {
+    display: none;
+}
+@media (max-width:400px) {
+
+.mob-contact{
+    display: inline;
+}
+
+.desktop-contact {
+    display: none;
+}
+.contact-page{
+    height: 20vh;
+}
+}
