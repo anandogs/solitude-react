@@ -1,91 +1,70 @@
-import React, {useState} from 'react';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore, {Pagination} from 'swiper';
-import 'swiper/swiper-bundle.css'
-import '../App.css';
+import React from 'react';
 import './TextExpand.css';
-import projects from './images/projects.png'
+import '../App.css';
 
-SwiperCore.use([Pagination]);
-
-function TextExpand() {
-
-	const [expand, toggleExpand] = useState(true);
-	
-	const hiddenText= {
-		display: expand? 'none' : 'block'
-	};
-	const [expand1, toggleExpand1] = useState(true);
-	
-	const hiddenText1= {
-		display: expand1? 'none' : 'block'
-	};
-
+function TextExpand(props) {
 	return (
-		<div className='flex-page center-div' id='projects'>
+		<div className='flex-page' id={props.pgId}>
+            <div className='img-container-desktop'>
 
-				<div> 
-				<img src={projects} alt='Projects' />
-				</div>	
+                <img src={props.deskImg}/>
 
-				<Swiper style={{ zIndex:'0', height: '100%'}} pagination={{clickable:'true'}}>
+            </div>
+        <div className='content-container-desktop'>
+			<div className='page-title-desktop'>
+				<img src={props.titleImg} alt ='Our Story'/>
+			</div>	
 
-					<SwiperSlide> 
-					
-						<p style={{overflow: 'auto'}}> 
+			<div className='text-container-desktop'> 
+			Sem. Pellentesque
+        tellus augue, tempus nec, laoreet at, porttitor blandit, leo. Phasellus
+        in odio. Duis lobortis, metus eu laoreet tristique, pede mi congue mi,
+        quis posuere augue nulla a augue. Pellentesque sed est. Mauris cursus
+        urna id lectus. Integer dignissim feugiat eros. Sed tempor volutpat
+        dolor. Vestibulum vel lectus nec mauris.
+        <br/><br/>        
+        <h3>Project</h3>
+        <br/> Lectores legere me lius quod ii legunt saepius. Claritas est
+        etiam processus dynamicus, qui sequitur mutationem consuetudium
+        lectorum. Mirum est notare quam littera gothica, quam nunc putamus
+        parum claram, anteposuerit litterarum.
+            </div>
+            <div className='img-container-mob'>
 
-							
-							Dui velit, ultrices vel, ullamcorper mattis, hendrerit in, erat. Aenean vel
-									quam at eros mattis commodo. Aenean feugiat iaculis justo.
-									Maecenas accumsan justo ut nibh. Donec ac lectus vitae odio
-							<br/><br/>
-							<span className='hide-toggle' onClick={() => toggleExpand(!expand)}>Project Name 1</span>
-							<span style= {hiddenText}>
-								Quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per
-								seacula quarta decima et quinta decima. Eodem modo typi, qui
-								nunc nobis videntur parum clari, fiant sollemnes in futurum.
-								Nunc varius risus.
-							</span>
-							<br/>
-							<span className='hide-toggle' onClick={() => toggleExpand1(!expand1)}>Project Name 2</span>
-							<span style= {hiddenText1}>
-								Quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per
-								seacula quarta decima et quinta decima. Eodem modo typi, qui
-								nunc nobis videntur parum clari, fiant sollemnes in futurum.
-								Nunc varius risus.
-							</span>
+                <img src={props.mobImg}/>
 
-							
-		
-						</p>
-
-					</SwiperSlide>
-			  
-					<SwiperSlide> 
-					
-					</SwiperSlide>
-
-					<SwiperSlide> 
-					
-
-					</SwiperSlide>
-			  
-					<SwiperSlide> 
-					
-					</SwiperSlide>
+            </div>
 			
-					<SwiperSlide> 
-					
+			<div className='caption-container-desktop'>
 
-					</SwiperSlide>
+				<h4>Photo heading</h4>	
 
-				</Swiper>
+				<span className='caption-text'>{props.caption} 
+				</span>
+
+			</div>
+        </div>
+			<div className='page-title-mob'>
+				<img src={props.titleImg} alt ='Our Story'/>
+			</div>	
+
+            <div className='text-container-mob scroll'> Sem. Pellentesque
+        tellus augue, tempus nec, laoreet at, porttitor blandit, leo. Phasellus
+        in odio. Duis lobortis, metus eu laoreet tristique, pede mi congue mi,
+        quis posuere augue nulla a augue. Pellentesque sed est. Mauris cursus
+        urna id lectus. Integer dignissim feugiat eros. Sed tempor volutpat
+        dolor. Vestibulum vel lectus nec mauris.
+        <br/><br/>        
+        <h3>Project</h3>
+        <br/> Lectores legere me lius quod ii legunt saepius. Claritas est
+        etiam processus dynamicus, qui sequitur mutationem consuetudium
+        lectorum. Mirum est notare quam littera gothica, quam nunc putamus
+        parum claram, anteposuerit litterarum.
+            
+			</div>
 			
-
-
 		</div>
 	);
 }
 
 export default TextExpand;
-

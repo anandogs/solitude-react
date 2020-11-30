@@ -16,6 +16,12 @@
 	text-transform: uppercase;
 }
 
+h3 {
+	font-size: 1em;
+	font-family: monotype-grotesque,sans-serif;
+	text-transform: uppercase;
+}
+
 .caption-text {
 
 	font-size: .75rem;
@@ -31,17 +37,11 @@
     .flex-page{
         display: flex;
         margin: auto;
+        height: 100vh;
         width: 80%;
         flex-direction: column;
-        height: 88vh;
         padding-bottom: 10vh;
         justify-content: space-evenly;
     }
 
-    .swiper-container {
-        width: 100%;
-        height: 40vh;
-        display: flex;
-        z-index: 0;
-    }
 }

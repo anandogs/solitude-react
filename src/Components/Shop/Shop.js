@@ -18,33 +18,6 @@ function Shop() {
 				<img src={products} alt ='Products'/>
 			</div>	
 
-			<Swiper style={{ zIndex:'0'}} pagination={{clickable:'true'}}>
-
-				<SwiperSlide> 
-				
-					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-		  
-				<SwiperSlide> 
-				
-					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-
-				<SwiperSlide> 
-				
-					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-		  
-				<SwiperSlide> 
-				
-					<img src={ imageBlank  } alt='Blank' style={{width: '100%', height: '90%'}}/>
-
-				</SwiperSlide>
-
-			</Swiper>
 			
 			<div className='caption-box center-div'>
 
