@@ -27,7 +27,6 @@ return (
             <TextExpand titleImg={require('./TextImage/images/projects.png')} pgId = 'projects' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
             <Shop titleImg={require('./Shop/images/products.png')} pgId = 'shop' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
             <ContactForm titleImg={require('./ContactForm/images/contact.png')} pgId = 'contact' deskImg={require('./TextImage/images/img-blank.jpg')} mobImg={require('./TextImage/images/img-blank.jpg')} text={ourStoryText} caption={ourStoryCaption}/>	
-            <ContactForm />
         </main>
     </div>
   );
