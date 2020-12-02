@@ -110,10 +110,18 @@ function WebMenu({open, toggleMenu}){
                             </div>
                         </div>
                         <div className='social-buttons'>
+                            <a target="_blank" href={'https://www.youtube.com/channel/UCUzqkZ3vsu2DBNw0jSaxepA'}>
                             <img src={yt} alt='YouTube'/>
+                            </a>
+                            <a target="_blank" href={'https://www.facebook.com/solitudefarm'}>
                             <img src={fb} alt='Facebook'/>
+                            </a>
+                            <a target="_blank" href={'https://instagram.com/solitudefarm?igshid=1x70k36dh2bii'}>
                             <img src={insta} alt='Instagram'/>
+                            </a>
+                            <a target="_blank" href={'mailto: solitudepermaculture@gmail.com'}>
                             <img src={mail} alt='Mail'/>
+                            </a>
                         </div>
                     </div>
                 </div>

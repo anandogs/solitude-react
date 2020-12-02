@@ -65,7 +65,7 @@ img {
         display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 8vh;
+    height: 12vh;
     }
     .text-container-mob {
         display:inline;
