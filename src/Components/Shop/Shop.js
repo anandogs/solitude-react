@@ -1,16 +1,11 @@
 import React from 'react';
-import {Swiper, SwiperSlide} from 'swiper/react';
-import SwiperCore, {Pagination} from 'swiper';
-import 'swiper/swiper-bundle.css'
 import '../App.css';
 import './Shop.css';
 import products from './images/products.png'
 import imageBlank from './images/image-blank.png'
 
-SwiperCore.use([Pagination]);
 
 function Shop(props) {
-
 	return (
 		<div className='flex-page' id={props.pgId}>
             <div className='img-container-desktop'>
@@ -33,14 +28,16 @@ function Shop(props) {
 		<br/><br/>	
 			
 			<div className='center-div desktop-button'>		
-				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED'}}>Shop</button>
+<a target="_blank" href={props.linkTo}>
+				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED', cursor: 'pointer'}} >More Info / Register</button>
+</a>
 			</div>
         </div>
 			<div className='page-title-mob'>
 				<img src={props.titleImg} alt ='Our Story'/>
 			</div>	
 
-			<div className='text-container-mob'> {props.text}
+			<div className='text-container-mob'> {props.mobText}
 			</div>
             <div className='img-container-mob'>
 
@@ -49,7 +46,9 @@ function Shop(props) {
             </div>
 		<br/><br/>	
 			<div className='center-div mob-button'>		
-				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED'}}>Shop</button>
+<a target="_blank" href={props.linkTo}>
+				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED'}} >More Info / Register</button>
+</a>
 			</div>
 
 			</div>

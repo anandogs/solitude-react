@@ -3,7 +3,7 @@
 }
 
 .intro-heading{
-    background-image: url('./images/bgImg.jpg');
+    background-image: url('./images/bgImg1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -12,8 +12,15 @@
     align-items: center;
 }
 
+.intro-box{
+    background-color: black;
+    width: 100%;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+}
+
 h1 {
-    margin-top: 40vh;
     color: #F9F6ED;
     text-align: center;
     width: 80%;
@@ -24,6 +31,11 @@ h1 > .red{
 }
 
 @media (max-width:400px) {
+#intro {
+    background-image: url('./images/bg.png');
+    background-size: cover;
+    width: 100%;
+}
 
 .intro-heading{
    background-image: none; 

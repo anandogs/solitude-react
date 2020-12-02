@@ -10,7 +10,8 @@
 
 }
 .header-img-web {
-    background-color: #B7B1A5;
+    background-image: url('./images/banner.png');
+    background-size: cover;
     flex: 1;
 }
 

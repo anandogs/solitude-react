@@ -21,49 +21,22 @@ function BurgerMenu({open, toggleMenu}) {
 		<div className = 'solitude-menu' style={SolitudeMenu()}>
 			<ul>
 				<li><Link onClick={toggleMenu} 
-				    to="our-story"
+				    to="perm-workshop"
 				    spy={true}
 				    smooth={true}
 				    offset={-70}
 				    duration={500}
 				>
-				our story
+			    Weekend permaculture workshop	
 				</Link></li>
 				<li><Link onClick={toggleMenu} 
-				    to="csa"
+				    to="eat-local"
 				    spy={true}
 				    smooth={true}
 				    offset={-70}
 				    duration={500}
 				>
-				csa
-				</Link></li>
-				<li><Link onClick={toggleMenu} 
-				    to="projects"
-				    spy={true}
-				    smooth={true}
-				    offset={-70}
-				    duration={500}
-				>
-				projects
-				</Link></li>
-				<li><Link onClick={toggleMenu} 
-				    to="shop"
-				    spy={true}
-				    smooth={true}
-				    offset={-70}
-				    duration={500}
-				>
-				products
-				</Link></li>
-				<li><Link onClick={toggleMenu} 
-				    to="contact"
-				    spy={true}
-				    smooth={true}
-				    offset={-70}
-				    duration={500}
-				>
-				get in touch	
+			    Eat local week	
 				</Link></li>
 			</ul>
 				<div className = 'social-box'>

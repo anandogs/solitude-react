@@ -9,11 +9,14 @@ function Intro() {
 	<div className='flex-page' id='intro'>
 
       <div className='intro-heading'>
+      <div className='intro-box'>
         <h1>
+      
+      I dream a private dream of returning to my <span className='red'>Eden</span>, there no effort is required, not even courage
 
-                Solitude Farm is a nook with two windmills and hundreds of papaya trees in <span className='red'>Auroville</span>, South India. Come in. 
         
         </h1>
+      </div>
       </div>
 	</div>
 

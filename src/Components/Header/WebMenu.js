@@ -19,28 +19,20 @@ function WebMenu({open, toggleMenu}){
 
     useEffect(() => {
 
-        const ourStoryLoc = {
-            'id' : '#our-story-link',
-            'loc' : document.querySelector('#our-story').offsetTop
+        const introLoc= {
+            'id' : '#intro-link',
+            'loc' : document.querySelector('#intro').offsetTop
+        }
+        const permaWorkshopLoc = {
+            'id' : '#perm-workshop-link',
+            'loc' : document.querySelector('#perm-workshop').offsetTop
         }
         
-        const csaLoc = {
-            'id' : '#csa-link',
-            'loc' : document.querySelector('#csa').offsetTop
+        const eatLocalLoc = {
+            'id' : '#eat-local-link',
+            'loc' : document.querySelector('#eat-local').offsetTop
         }
-        const projectsLoc = {
-            'id': '#projects-link',  
-            'loc':  document.querySelector('#projects').offsetTop
-        }
-        const shopLoc = {
-            'id': '#shop-link', 
-            'loc': document.querySelector('#shop').offsetTop
-        }
-        const contactLoc = {
-            'id': '#contact-link',
-            'loc': document.querySelector('#contact').offsetTop
-        }
-        const pageArray = [ourStoryLoc, csaLoc, projectsLoc, shopLoc, contactLoc]
+        const pageArray = [introLoc, permaWorkshopLoc, eatLocalLoc]
         
         const closestPage = (pgArr) => {
             console.log(window.innerWidth)
@@ -80,54 +72,40 @@ function WebMenu({open, toggleMenu}){
                             </Link>
                         </div>
                         <div className='menu-items'>
-                            <div className='menu-links' id='our-story-link'>
+                            <div className='menu-links' id='intro-link'>
                                 <Link onClick={toggleMenu} 
-                                    to="our-story"
+                                    to="intro"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
                                 >
-                                our story
+                                <div style={{width: '100%'}}>
+                                home 
+                                </div>
                                 </Link>
                             </div>
-                            <div className='menu-links' id='csa-link'>
+                            <div className='menu-links' id='perm-workshop-link'>
                                 <Link onClick={toggleMenu} 
-                                    to="csa"
+                                    to="perm-workshop"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
                                 >
-                                csa
+                                <div style={{width: '100%'}}>
+                                Perma Workshop 
+                                </div>
                                 </Link>
                             </div>
-                            <div className='menu-links' id='projects-link'>
-                                <Link onClick={toggleMenu}
-                                    to="projects"
+                            <div className='menu-links' id='eat-local-link'>
+                                <Link onClick={toggleMenu} 
+                                    to="eat-local"
                                     spy={true}
                                     smooth={true}
                                     duration={500}
                                 >
-                                projects
-                                </Link>
-                            </div>
-                            <div className='menu-links' id='shop-link'>
-                                <Link onClick={toggleMenu}
-                                    to="shop"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                products
-                                </Link>
-                            </div>
-                            <div className='menu-links' id='contact-link'>
-                                <Link onClick={toggleMenu}
-                                    to="contact"
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                >
-                                get in touch	
+                                <div style={{width: '100%'}}>
+                                Eat local week 
+                                </div>
                                 </Link>
                             </div>
                         </div>
