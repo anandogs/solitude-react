@@ -49,7 +49,7 @@ return (
     <Header />
         <main>
             <Intro />
-            <Shop titleImg={require('./TextImage/images/our-story.png')} pgId = 'perm-workshop' deskImg={require('./TextImage/images/perma.jpg')} mobImg={require('./TextImage/images/perma-mob.jpg')} text={permaText} mobText={permaMobText} linkTo={permaLink}/>
+            <Shop titleImg={require('./TextImage/images/our-story.png')} pgId = 'perm-workshop' deskImg={require('./TextImage/images/perma.jpg')} mobImg={require('./TextImage/images/perma-mob.png')} text={permaText} mobText={permaMobText} linkTo={permaLink}/>
             <Shop titleImg={require('./TextImage/images/our-story.png')} pgId = 'eat-local' deskImg={require('./TextImage/images/eat-local.jpg')} mobImg={require('./TextImage/images/eat-local-mob.jpg')} text={eatLocalText} mobText={eatLocalMobText} linkTo={eatLocalLink}/>
         </main>
     </div>
