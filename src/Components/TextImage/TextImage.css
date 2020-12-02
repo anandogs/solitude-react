@@ -43,7 +43,7 @@ img {
 .caption-container-mob{
     display: none;
 }
-@media (max-width:400px) {
+@media (max-width:500px) {
 
     .img-container-desktop {
         display: none;
