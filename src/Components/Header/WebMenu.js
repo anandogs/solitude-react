@@ -62,7 +62,7 @@ function WebMenu({open, toggleMenu}){
 
             }
 
-            if (chosenPage !== '#intro'){
+            if (chosenPage !== '#intro' && window.innerWidth > 1150){
                 
                 document.querySelector(chosenPage).style.backgroundColor = '#445641';
                 document.querySelector(chosenPage).style.color = '#F9F5EB';
