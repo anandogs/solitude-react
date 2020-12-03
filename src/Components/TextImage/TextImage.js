@@ -1,13 +1,14 @@
 import React from 'react';
-import './TextImage.css';
 import '../App.css';
+import './TextImage.css';
+
 
 function TextImage(props) {
 	return (
 		<div className='flex-page' id={props.pgId}>
             <div className='img-container-desktop'>
 
-                <img src={props.deskImg}/>
+                <img src={props.deskImg} alt={props.pgId}/>
 
             </div>
         <div className='content-container-desktop'>
@@ -19,41 +20,38 @@ function TextImage(props) {
 			</div>
             <div className='img-container-mob'>
 
-                <img src={props.mobImg}/>
+                <img src={props.mobImg} alt={props.pgId}/>
 
             </div>
+		<br/><br/>	
 			
-			<div className='caption-container-desktop'>
-
-				<h4>Photo heading</h4>	
-
-				<span className='caption-text'>{props.caption} 
-				</span>
-
+			<div className='center-div desktop-button'>		
+<a target="_blank" rel='noopener noreferrer' href={props.linkTo}>
+				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED', cursor: 'pointer'}} >More Info / Register</button>
+</a>
 			</div>
         </div>
 			<div className='page-title-mob'>
 				<img src={props.titleImg} alt ='Our Story'/>
 			</div>	
 
-			<div className='text-container-mob'> {props.text}
+			<div className='text-container-mob'> {props.mobText}
 			</div>
             <div className='img-container-mob'>
 
-                <img src={props.mobImg}/>
+                <img src={props.mobImg} alt={props.pgId}/>
 
             </div>
-			
-			<div className='caption-container-mob'>
-
-				<h4>Photo heading</h4>	
-
-				<span className='caption-text'>{props.caption} 
-				</span>
+		<br/><br/>	
+			<div className='center-div mob-button'>		
+<a target="_blank" rel='noopener noreferrer' href={props.linkTo}>
+				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED'}} >More Info / Register</button>
+</a>
+			</div>
 
 			</div>
-		</div>
 	);
 }
 
 export default TextImage;
+

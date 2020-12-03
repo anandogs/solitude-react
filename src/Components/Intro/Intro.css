@@ -30,7 +30,7 @@ h1 > .red{
     color: #E75C44;
 }
 
-@media (max-width:500px) {
+@media (max-width:1150px) {
 #intro {
     background-image: url('./images/bg.png');
     background-size: cover;

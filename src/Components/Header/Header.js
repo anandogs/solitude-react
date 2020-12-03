@@ -9,7 +9,7 @@ import WebMenu from './WebMenu';
 function Header() {
 
     const curState = () => {
-        if (window.innerWidth <= 400){
+        if (window.innerWidth <= 1150){
             return false
         }
         else {
@@ -20,7 +20,7 @@ function Header() {
 	const [open, setOpen] = useState(curState())
 
 	const toggleMenu = () => {
-        if (window.innerWidth <= 400){
+        if (window.innerWidth <= 1150){
             setOpen(!open)
         }
 	};

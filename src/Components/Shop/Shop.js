@@ -1,8 +1,6 @@
 import React from 'react';
 import '../App.css';
 import './Shop.css';
-import products from './images/products.png'
-import imageBlank from './images/image-blank.png'
 
 
 function Shop(props) {
@@ -10,7 +8,7 @@ function Shop(props) {
 		<div className='flex-page' id={props.pgId}>
             <div className='img-container-desktop'>
 
-                <img src={props.deskImg}/>
+                <img src={props.deskImg} alt={props.pgId}/>
 
             </div>
         <div className='content-container-desktop'>
@@ -22,13 +20,13 @@ function Shop(props) {
 			</div>
             <div className='img-container-mob'>
 
-                <img src={props.mobImg}/>
+                <img src={props.mobImg} alt={props.pgId}/>
 
             </div>
 		<br/><br/>	
 			
 			<div className='center-div desktop-button'>		
-<a target="_blank" href={props.linkTo}>
+<a target="_blank" rel='noopener noreferrer' href={props.linkTo}>
 				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED', cursor: 'pointer'}} >More Info / Register</button>
 </a>
 			</div>
@@ -41,12 +39,12 @@ function Shop(props) {
 			</div>
             <div className='img-container-mob'>
 
-                <img src={props.mobImg}/>
+                <img src={props.mobImg} alt={props.pgId}/>
 
             </div>
 		<br/><br/>	
 			<div className='center-div mob-button'>		
-<a target="_blank" href={props.linkTo}>
+<a target="_blank" rel='noopener noreferrer' href={props.linkTo}>
 				<button className='mono' style={{width: '100%', border: 'none', backgroundColor: '#E75C44', padding: '.5em', color: '#F9F6ED'}} >More Info / Register</button>
 </a>
 			</div>

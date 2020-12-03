@@ -1,6 +1,9 @@
 .flex-page {
     flex-direction: row;
 }
+.mob-button{
+    display: none;
+}
 img {
     max-height: 100%;
     max-width: 100%;
@@ -31,8 +34,10 @@ img {
     justify-content: center;
 }
 .text-container-desktop{
+    overflow: scroll;
 }
 .caption-container-desktop {
+    overflow: scroll;
 }
 .page-title-mob{
     display: none;
@@ -43,8 +48,14 @@ img {
 .caption-container-mob{
     display: none;
 }
-@media (max-width:500px) {
+@media (max-width:1150px) {
 
+.mob-button{
+    display: inline;
+}
+.desktop-button{
+    display: none;
+}
     .img-container-desktop {
         display: none;
     }
@@ -63,14 +74,15 @@ img {
     }
     .page-title-mob {
         display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     height: 12vh;
     }
     .text-container-mob {
-        display:inline;
+        display:flex;
         height: 28vh;
+        overflow: scroll;
         padding-bottom: 2vh;
+        justify-content: center;
     } 
     .caption-container-mob {
         display:inline;
